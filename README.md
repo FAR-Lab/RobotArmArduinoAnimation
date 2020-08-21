@@ -13,5 +13,9 @@ A six servo robotic hand is controlled in 3D space with the help of an Arduino M
 ### Desmos Graphing Tool
 [Main Desmos Graph](https://www.desmos.com/calculator/zgmw47nks6)
 
+Desmos was an important tool in defining the necessary functions to allow the robot to move correctly.
+
 ### 3D Graphing Calculator Software
 [Runiter](https://www.runiter.com)
+
+Runiter was used to create 3D paths, as well as create a solid visualization for the possible range of the robot.
