@@ -5,7 +5,9 @@ A six servo robotic hand is controlled in 3D space with the help of an Arduino M
 
 ### Youtube Links
 [Robot Arm Dancing](https://www.youtube.com/watch?v=UsHJvPzx4wk)
+
 [Robot Arm Drawing Smiley Face](https://www.youtube.com/watch?v=ATHjjI4BhdQ)
+
 [Robot Arm Drawing Horizontal Lines](https://www.youtube.com/watch?v=711mE4_5Rwk)
 
 ### Desmos Graphing Tool
