@@ -19,3 +19,10 @@ Desmos was an important tool in defining the necessary functions to allow the ro
 [Runiter](https://www.runiter.com)
 
 Runiter was used to create 3D paths, as well as create a solid visualization for the possible range of the robot.
+
+```c
+void setup()
+{
+
+}
+```
