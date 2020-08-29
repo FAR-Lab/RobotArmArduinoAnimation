@@ -404,6 +404,10 @@ void KeyboardRead()
   {
     HorseShoe();
   }
+  if (InString == "k")
+  {
+    Kobe();
+  }
   if (InString == "t")
   {
     return;
