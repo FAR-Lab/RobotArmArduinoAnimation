@@ -14,8 +14,6 @@ float A = 10.5, //A is the length of the first arm. In this robot, it is 10.5cm.
 String InString; //InString is the variable which keyboard inputs will be sent to.
 float count; //Count dictates how complete a motion is. Ranges between 0 (Not Complete) to 1000 (Fully Complete)
 
-
-
 float startAngles[6] = {75, 90, 90, 90, 90, 90};
 float currentAngles[6] = {75, 90, 90, 90, 90, 90};
 float endAngles[6] = {75, 90, 90, 90, 90, 90};
@@ -376,7 +374,7 @@ void MoveFromQueue()
 
 void PointMove(float x, float y, float z, float head, float head_tilt, float open_head, int t)
 {
-  XYZ(x, y, z);
+  XYZ(x, y, z); //Test Comment
   endAngles[3] = head;
   endAngles[4] = head_tilt;
   endAngles[5] = open_head;
