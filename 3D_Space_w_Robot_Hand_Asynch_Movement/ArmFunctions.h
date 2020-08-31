@@ -124,7 +124,7 @@ void HorseShoe()
 
 void Throw()
 {
-  float Throw[][7] = {{10, 15, 0, 0, 90, 45, 2000},
+  float Throw[][7] = {{10, 15, 0, 0, 90, 45, 1000},
     {10, 15, 0, 0, 90, 45, 1000},
     {10, 15, 0, 0, 90, 90, 1000},
     { -5, 18, 0, 115, 90, 90, 2000},
@@ -141,6 +141,21 @@ void Throw()
     for (int j = 0; j <= (sizeof(Throw[0]) / sizeof(Throw[0][0])) - 1; j++)
     {
       queue[i][j] = Throw[i][j];
+    }
+  }
+}
+
+//--------------------------------------------------------------------------------------------------
+
+void UserMadeFunction_1()
+{
+  float UserMadeFunction_1[][7] = {
+  };
+  for ( int i = 0; i <= (sizeof(UserMadeFunction_1) / sizeof(UserMadeFunction_1[0])) - 1; i++)
+  {
+    for (int j = 0; j <= (sizeof(UserMadeFunction_1[0]) / sizeof(UserMadeFunction_1[0][0])) - 1; j++)
+    {
+      queue[i][j] = UserMadeFunction_1[i][j];
     }
   }
 }

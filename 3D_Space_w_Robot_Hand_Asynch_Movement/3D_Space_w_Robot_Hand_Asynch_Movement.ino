@@ -403,6 +403,10 @@ void KeyboardRead()
   {
     Throw();
   }
+  if (InString == "u1")
+  {
+    UserMadeFunction_1();
+  }
   if (InString == "x")
   {
     return;

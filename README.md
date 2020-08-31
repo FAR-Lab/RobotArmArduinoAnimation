@@ -22,3 +22,7 @@ Runiter was used to create 3D paths, as well as create a solid visualization for
 
 ### How To:
 
+- Model Arm Name
+- Construction video
+- Code that describes adding a function.
+- Wiring Schematic
