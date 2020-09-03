@@ -12,6 +12,7 @@ The name of the particular robot arm I used to build and test on was called the 
 
 ### Youtube Links
 These videos showcase some of the actions I have been able to complete with my robot.
+
 In order from most recent to least recent:
 
 [Robot Arm Throwing Ball](https://youtu.be/CUMaveZK-uk)
@@ -23,14 +24,14 @@ In order from most recent to least recent:
 [Robot Arm Drawing Smiley Face](https://www.youtube.com/watch?v=ATHjjI4BhdQ)
 
 ### Desmos Graphing Tool
-[Main Desmos Graph](https://www.desmos.com/calculator/zgmw47nks6)
-
 Desmos was an important tool in defining the necessary functions to allow the robot to move correctly.
 
-### 3D Graphing Calculator Software
-[Runiter](https://www.runiter.com)
+[Main Desmos Graph](https://www.desmos.com/calculator/zgmw47nks6)
 
+### 3D Graphing Calculator Software
 Runiter was used to create 3D paths, as well as create a solid visualization for the possible range of the robot.
+
+[Runiter](https://www.runiter.com)
 
 ### How To:
 - Code that describes adding a function.
