@@ -40,8 +40,8 @@ Runiter was used to create 3D paths, as well as create a solid visualization for
 
 [Runiter](https://www.runiter.com)
 
-### How To:
-- Code that describes adding a function.
+### How To Add Your Own Movements:
+The robot moves to different 3D points stored in a two dimensional array called "queue". The main way of actually making the servos move is to read keyboard inputs, run specific functions based on the keystroke sent to the arduino, change the "queue" array with desired points, and finally read from the "queue" array to know which points to move to. 
 
 **Step 1:**
 ```
