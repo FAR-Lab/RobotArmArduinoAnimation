@@ -1,5 +1,8 @@
 /*
    This ino file should be used in conjunction with the ArmFunctions.h file.
+   
+   IMPORTANT: If you intend to use this arduino code along with the 3D Runiter Calculator, please refer to line 289 of this code, or
+   watch this video: [EDIT NEEDED].
 */
 
 #include <Servo.h> //Library needed to inpute values to the servo.
@@ -278,6 +281,32 @@ void MoveFromQueue()
 
 void PointMove(float x, float y, float z, float head, float head_tilt, float open_head, int t)
 {
+//  float place_holder_y = y;
+//  float place_holder_z = z;
+//  y = place_holder_z;
+//  z = -1 * place_holder_y;
+/*
+ * IMPORTANT: The above lines are commented because of the way this robot was programmed to interpret 3D space. The 3D graphing calculator draws the axes differently than how the
+ * robot understands them. Specifically, the y-axis and z-axis swap places. The robot interperts the y-axis as vertical, and the z-axis as left and right. The 3D graphing calculator
+ * however, renders the z-axis as vertical with the y-axis being shown going left and right. Additionally, the orientation of the 3D calculator puts left as positive, while the robot
+ * interperts left as negative. 
+ * 
+ * You should uncomment the above lines if:
+ * 
+ * 1. If you want to draw a path in the 3D calculator and want to import the points native to that program directly into the arduino code without any alterations. The 3D calculator doesn't
+ *    have an option to switch the y and z axes to make the switch between calculator and arduino code easier. This way, you could make a list of points in the 3D calculator program, and import
+ *    them into the ArmFunctions header file. The only problem with this is that the comments describing other functions such as XY(), XYZ(), AngleTopView(), and the description before the three
+ *    global arrays might not make total sense as the x,y, and z positions will be flipped due to the coordinate transformation. 
+ *    
+ * You should leave the above lines commented if:
+ * 
+ * 1. You want to work in the robots 3D space. This means that forward will be +X, straight up would be +Y, left would be -Z, and right would be +Z. If you display a point on the 3D calculator, you
+ *    will have to perform the coordinate transformation manually. The comments describing XY(), XYZ(), AngleTopView(), and the description before the three global arrays will stay accurate, but it
+ *    will be less-user friendly to create new paths.
+ *  
+ *  Here is a video link that describes the process a little bit better: [EDIT NEEDED]
+ */
+
   XYZ(x, y, z); //Takes the x,y, and z values and calculates the angles Servo_4, Servo_3 and Servo_5 would need to be at.
   endAngles[3] = head;
   endAngles[4] = head_tilt;
@@ -379,7 +408,7 @@ void ServoMoveAsynch(float a1, float a2, float a3, float a4, float a5, float a6,
 void KeyboardRead()
 {
   ClearQueue(); //Important to clear the queue before altering any values in it.
-  if (InString == "a")
+  if (InString == "e")
   {
     Excited();
   }
