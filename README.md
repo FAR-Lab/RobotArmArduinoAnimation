@@ -10,8 +10,9 @@ The name of the particular robot arm I used to build and test on was called the 
 
 [Watch the assembly video](https://www.youtube.com/watch?v=8U6sWG6N5w8&list=PLQYW5Ukp-1D_z2C-tdKFFuJjK9zoAfM57&index=2)
 
-[Schematic for arduino + servo connections (TINKERCAD)](https://www.tinkercad.com/things/fWX9UZN7YsP-terrific-elzing-wluff/editel?tenant=circuits)
-[Schematic for arduino + servo connections (IMAGE)](https://imgur.com/a/ABNZXcD)
+[Schematic for arduino and servo connections (TINKERCAD)](https://www.tinkercad.com/things/fWX9UZN7YsP-terrific-elzing-wluff/editel?tenant=circuits)
+
+[Schematic for arduino and servo connections (IMAGE)](https://imgur.com/a/ABNZXcD)
 
 ### Youtube Links
 These videos showcase some of the actions I have been able to complete with my robot.
