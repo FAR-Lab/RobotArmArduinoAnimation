@@ -83,6 +83,7 @@ void UserMadeFunction_1()
   //...
 }
 ```
+
 **Step 4:**
 The program I wrote has a queue length set to 12 by default. My Arduino didn't have much memory for larger 2D arrays. If, however, you have a function that has more than 12 points, go to the queue[12][7] array definition and increase the 12 to any integer you like. If you want to save some memory for storing these global variables,  you could remove the predefined functions I have included, or shorten the queue length to something smaller if you won't include functions with a particularly long set of points.
 ```
@@ -90,3 +91,27 @@ The program I wrote has a queue length set to 12 by default. My Arduino didn't h
 float queue[20][7] = {};
 ```
 
+**Step 5:**
+If you would like to define another function of points, copy and paste previous functions and simply edit the 2D array, edit the name of the function, and be sure to include a string in the KeyboardRead() method that allows the robot to read from that function.
+```
+//Copy and paste the following:
+void UserMadeFunction_X()
+{
+  float UserMadeFunction_X[][7] = {{}
+  };
+  for ( int i = 0; i <= (sizeof(UserMadeFunction_X) / sizeof(UserMadeFunction_X[0])) - 1; i++)
+  {
+    for (int j = 0; j <= (sizeof(UserMadeFunction_X[0]) / sizeof(UserMadeFunction_X[0][0])) - 1; j++)
+    {
+      queue[i][j] = UserMadeFunction_X[i][j];
+    }
+  }
+}
+```
+Edit the KeyboardRead() method:
+```
+if(InString == "XXX")
+{
+  UserMadeFunction_X();
+}
+```
