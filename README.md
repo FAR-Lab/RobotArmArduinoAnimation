@@ -15,12 +15,15 @@ The name of the particular robot arm I used to build and test on was called the 
 [Schematic for arduino and servo connections (IMAGE)](https://imgur.com/a/ABNZXcD)
 
 ### Explanatory Video
-[Here](https://youtu.be/CUMaveZK-uk) is a video that showcases the code one might find here. It describes how the robot works and gives the user a tutorial to create their own paths and movements.
+[Here](https://youtu.be/jFfA_24hS0Y) is a video that showcases the code one might find here. It describes how the robot works and gives the user a tutorial to create their own paths and movements.
+
+[Here](https://imgur.com/a/TPxrWXB) are two images that show the difference in coordinate systems between the robot code and the additional 3D Calculator program.
 
 ### Youtube Links
 These videos showcase some of the actions I have been able to complete with my robot.
 
 In order from most recent to least recent:
+[Explanatory Video](https://youtu.be/jFfA_24hS0Y)
 
 [Robot Arm Throwing Ball](https://youtu.be/CUMaveZK-uk)
 
