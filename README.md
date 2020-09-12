@@ -66,4 +66,20 @@ void UserMadeFunction_1()
   };
   //...
   //...
+}
+```
+If you would like more information on the definition of the parameters, watch the explanatory video [here](https://youtu.be/jFfA_24hS0Y).
+
+**Step 3:**
+Follow step 2 to add more points--if wanted. A series of points is listed below. Be sure to include commass between sets of curly brackets.
+```
+void UserMadeFunction_1()
+{
+  float UserMadeFunction_1[][7] = {{10,3,5,45,180,0,2000},
+                                   {5,-5,16,135,0,180,1500},
+                                   {3,-12,14,90,90,90,1000}
+  };
+  //...
+  //...
+}
 ```
