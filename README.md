@@ -55,10 +55,15 @@ if(InString == "tutorial")
   UserMadeFunction_1();
 }
 ```
-Change the InString string check to whatever string you want, but double check to make sure no other movement is using that specific string. For example, Sad() uses "s", and Throw() uses "t". If you want to change the method UserMadeFunction_1() to something else, be sure to change all instances of UserMadeFunction_1() in the attached header file, "ArmFunctions.h"
+Change the InString string check to whatever string you want, but double check to make sure no other movement is using that specific string. For example, Sad() uses "s", and Throw() uses "t". If you want to change the method UserMadeFunction_1() to something else, be sure to change all instances of UserMadeFunction_1() in the attached header file, "ArmFunctions.h".
 
 **Step 2:**
-Open the 
+Open the ArmFunctions.h header file and locate the UserMadeFunctin_1() method definition. Again, if you changed the name of this, be sure to change all instances of it to match your desired name. In the definition of the array include two brackets and list out the seven parameters for the point you want the robot to reach. For example, if you want the robot to move to point (10,3,5), have a pitch of 45 degrees, a wrist rotation of 180 degrees, an open hand of 0 degrees, and want to make the robot take 2000 milliseconds to reach that point, the first array will look like the following,
 ```
-Serial.println("Hello World2!);
+void UserMadeFunction_1()
+{
+  float UserMadeFunction_1[][7] = {{10,3,5,45,180,0,2000}
+  };
+  //...
+  //...
 ```
