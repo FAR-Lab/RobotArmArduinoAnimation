@@ -2,7 +2,7 @@
    This ino file should be used in conjunction with the ArmFunctions.h file.
    
    IMPORTANT: If you intend to use this arduino code along with the 3D Runiter Calculator, please refer to line 289 of this code, or
-   watch this video: [EDIT NEEDED].
+   watch this video: https://youtu.be/jFfA_24hS0Y.
 */
 
 #include <Servo.h> //Library needed to inpute values to the servo.
@@ -38,7 +38,7 @@ float endAngles[6] = {75, 90, 90, 90, 90, 90};
    The platform of the robot is set up in such a way where the Arduino and wire connections are off to the left on the metal stand, and the robot has free motion in the empty space
    in front of it. Thinking from the perspective of the robot, the X-Axis would go forward and backward, the Y-Axis would go straight up, and the Z-Axis would travel from left to right.
    Additionally, the negative X-Axis is behind the robot, the negative Y-Axis would go down under it, and the negative Z-Axis would go to the left. The video here shows this 
-   setup: [EDIT NEEDED}.
+   setup: https://youtu.be/jFfA_24hS0Y.
 
    Because of this 3D system, the servo labeled Servo_5 can only turn the robot hand left and right, or into the Z-Axis. Therefore, we associate Servo_4 and Servo_3 with the (X,Y) movement
    and Servo_5 with the final Z movement. Servo_2, Servo_1 and Servo_0 are just additional angles used to manipulate the arm after the robot reaches the desired 3D point. The robot can move
@@ -293,19 +293,19 @@ void PointMove(float x, float y, float z, float head, float head_tilt, float ope
  * 
  * You should comment the above lines if:
  * 
- * 1. You want to work in the robots 3D space. This means that forward will be +X, straight up would be +Y, left would be -Z, and right would be +Z. If you display a point on the 3D calculator, you
+ *  - You want to work in the robots 3D space. This means that forward will be +X, straight up would be +Y, left would be -Z, and right would be +Z. If you display a point on the 3D calculator, you
  *    will have to perform the coordinate transformation manually. The comments describing XY(), XYZ(), AngleTopView(), and the description before the three global arrays will stay accurate, but it
  *    will be less-user friendly to create new paths.
  *    
  * You should leave the above lines uncommented if:
  * 
- * 1. If you want to draw a path in the 3D calculator and want to import the points native to that program directly into the arduino code without any alterations. The 3D calculator doesn't
+ *  - If you want to draw a path in the 3D calculator and want to import the points native to that program directly into the arduino code without any alterations. The 3D calculator doesn't
  *    have an option to switch the y and z axes to make the switch between calculator and arduino code easier. This way, you could make a list of points in the 3D calculator program, and import
  *    them into the ArmFunctions header file. The only problem with this is that the comments describing other functions such as XY(), XYZ(), AngleTopView(), and the description before the three
  *    global arrays might not make total sense as the x,y, and z positions will be flipped due to the coordinate transformation. This option is preferred, as making new paths is easier.  
  * 
- *  Here is a video link that describes the process a little bit better: [EDIT NEEDED]
- *  Here is an image link that shows the coordinate transformation: [EDIT NEEDED]
+ *  Here is a video link that describes the process a little bit better: https://youtu.be/jFfA_24hS0Y
+ *  Here is an image link that shows the coordinate transformation: https://imgur.com/a/TPxrWXB
  */
 
   XYZ(x, y, z); //Takes the x,y, and z values and calculates the angles Servo_4, Servo_3 and Servo_5 would need to be at.
@@ -432,7 +432,7 @@ void KeyboardRead()
   {
     Throw();
   }
-  if (InString == "u1")
+  if (InString == "tutorial")
   {
     UserMadeFunction_1();
   }
