@@ -23,6 +23,7 @@ The name of the particular robot arm I used to build and test on was called the 
 These videos showcase some of the actions I have been able to complete with my robot.
 
 In order from most recent to least recent:
+
 [Explanatory Video](https://youtu.be/jFfA_24hS0Y)
 
 [Robot Arm Throwing Ball](https://youtu.be/CUMaveZK-uk)
