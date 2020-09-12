@@ -48,7 +48,7 @@ Runiter was used to create 3D paths, as well as create a solid visualization for
 The robot moves to different 3D points stored in a two dimensional array called "queue". The main way of actually making the servos move is to read keyboard inputs, run specific functions based on the keystroke sent to the arduino, change the "queue" array with desired points, and finally read from the "queue" array to know which points to move to. 
 
 **Step 1:**
-Open the 3D_Space_w_Robot_Hand_Asynch_Movement.ino file and locate the KeyboardRead() method. There will be an if statement that reads,
+Open the 3D_Space_w_Robot_Hand_Asynch_Movement.ino file and locate the KeyboardRead() method. There will be an if statement that reads:
 ```
 if(InString == "tutorial")
 {
@@ -58,7 +58,7 @@ if(InString == "tutorial")
 Change the InString string check to whatever string you want, but double check to make sure no other movement is using that specific string. For example, Sad() uses "s", and Throw() uses "t". If you want to change the method UserMadeFunction_1() to something else, be sure to change all instances of UserMadeFunction_1() in the attached header file, "ArmFunctions.h".
 
 **Step 2:**
-Open the ArmFunctions.h header file and locate the UserMadeFunctin_1() method definition. Again, if you changed the name of this, be sure to change all instances of it to match your desired name. In the definition of the array include two brackets and list out the seven parameters for the point you want the robot to reach. For example, if you want the robot to move to point (10,3,5), have a pitch of 45 degrees, a wrist rotation of 180 degrees, an open hand of 0 degrees, and want to make the robot take 2000 milliseconds to reach that point, the first array will look like the following,
+Open the ArmFunctions.h header file and locate the UserMadeFunctin_1() method definition. Again, if you changed the name of this, be sure to change all instances of it to match your desired name. In the definition of the array include two brackets and list out the seven parameters for the point you want the robot to reach. For example, if you want the robot to move to point (10,3,5), have a pitch of 45 degrees, a wrist rotation of 180 degrees, an open hand of 0 degrees, and want to make the robot take 2000 milliseconds to reach that point, the first array will look like the following:
 ```
 void UserMadeFunction_1()
 {
@@ -71,7 +71,7 @@ void UserMadeFunction_1()
 If you would like more information on the definition of the parameters, watch the explanatory video [here](https://youtu.be/jFfA_24hS0Y).
 
 **Step 3:**
-Follow step 2 to add more points--if wanted. A series of points is listed below. Be sure to include commass between sets of curly brackets.
+Follow step 2 to add more points--if wanted. A series of points is listed below. Be sure to include commas between sets of curly brackets.
 ```
 void UserMadeFunction_1()
 {
@@ -83,3 +83,10 @@ void UserMadeFunction_1()
   //...
 }
 ```
+**Step 4:**
+The program I wrote has a queue length set to 12 by default. My Arduino didn't have much memory for larger 2D arrays. If, however, you have a function that has more than 12 points, go to the queue[12][7] array definition and increase the 12 to any integer you like. If you want to save some memory for storing these global variables,  you could remove the predefined functions I have included, or shorten the queue length to something smaller if you won't include functions with a particularly long set of points.
+```
+//float queue[12][7] = {};
+float queue[20][7] = {};
+```
+
