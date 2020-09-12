@@ -48,10 +48,17 @@ Runiter was used to create 3D paths, as well as create a solid visualization for
 The robot moves to different 3D points stored in a two dimensional array called "queue". The main way of actually making the servos move is to read keyboard inputs, run specific functions based on the keystroke sent to the arduino, change the "queue" array with desired points, and finally read from the "queue" array to know which points to move to. 
 
 **Step 1:**
+Open the 3D_Space_w_Robot_Hand_Asynch_Movement.ino file and locate the KeyboardRead() method. There will be an if statement that reads,
 ```
-Serial.println("Hello World!);
+if(InString == "tutorial")
+{
+  UserMadeFunction_1();
+}
 ```
+Change the InString string check to whatever string you want, but double check to make sure no other movement is using that specific string. For example, Sad() uses "s", and Throw() uses "t". If you want to change the method UserMadeFunction_1() to something else, be sure to change all instances of UserMadeFunction_1() in the attached header file, "ArmFunctions.h"
+
 **Step 2:**
+Open the 
 ```
 Serial.println("Hello World2!);
 ```
