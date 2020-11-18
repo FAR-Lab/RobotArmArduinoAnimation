@@ -1,5 +1,4 @@
 # Robot Arm Arduino Animation
-#THIS IS A FORK FROM THE MAIN FARLAB REPO
 
 ### Summary
 A six servo robotic hand is controlled in 3D space with the help of an Arduino Mini--more specifically an Adafruit Micro Mini. The code defines a 3D point based system for the robot to move around in, and has functions that help calculate movements to points in space. The user inputs points the robot would like to move to and the code calculates the required angles each servo must move to in order to reach that point.
